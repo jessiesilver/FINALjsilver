@@ -1,0 +1,129 @@
+body {
+ padding: 0px 0px 0px 50px;
+ }
+
+
+h1 {
+  font-family: Futura, sans-serif;
+  font-size:400%;
+    font-weight: bold;
+  letter-spacing: 0.1em
+  padding: 0px 10px 0px 30px;
+  margin: 0px 50px 0px 30px;
+  color: black;
+     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+     -webkit-text-stroke-width: 2px;
+     -webkit-text-stroke-color: black;
+
+ }
+
+h2 {
+  font-family: Futura, sans-serif;
+  font-size: 200%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ff0800;
+  margin: 0px 0px 0px 30px;
+  line-height: 0px;
+  font-weight: bold;
+
+ }
+
+h3 {
+  font-family: Futura, sans-serif;
+  font-size: 140%;
+  color: #ff0800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0px 100px 0px 100px;
+  line-height: 0px;
+  font-weight: bold;
+ }
+
+ h4 {
+   font-family: Futura, sans-serif;
+   font-size: 110%;
+   color: #ff0800;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   padding: 0px 100px 0px 100px;
+   line-height: 0px;
+  font-weight: lighter;
+  }
+
+p {
+  font-family: garamond, serif;
+  font-size: 100%;
+  line-height: 1.4em;
+  color: 252525;
+  padding: 0px 300px 0px 150px;
+ }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+ li {
+    float: left;
+}
+ li a {
+    display: block;
+    color: black;
+    font-family: Futura, sans-serif;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+ li a:hover:not(.active) {
+    background-color: white;
+    color:#ff0800;
+}
+
+.active {
+     background: white;
+ color: #ff0800;
+}
+
+ li a:hover:(.active) {
+    background-color: white;
+    color:#FF857F;
+}
+
+div {
+    padding: 0px 0px 50px 0px;
+    border: 0px solid black;
+}
+
+divB {
+    padding: 0px 110px 50px 100px;
+    border: 0px solid black;
+}
+
+ .big1 {
+  font-family: Futura, sans-serif;
+  font-size: 110%;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.03em;
+  padding: 0px 2px 0px 0px;
+}
+
+ .big2 {
+  font-family: Futura, sans-serif;
+  font-size: 110%;
+  text-transform: uppercase;
+  font-size: 110%;
+  color: black;
+  letter-spacing: 0.03em;
+  padding: 0px 2px 0px 2px;
+}
+
+.small {
+  font-size: 100%;
+  font-family: garamond, serif;
+  color: black;
+  line-height: 1.4em;
+}

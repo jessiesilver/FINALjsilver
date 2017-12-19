@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ <title>Global Incarceration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+
+ <link href="main.css" type="text/css"' rel="stylesheet"  />
+
+
+</head>
+
+<body>
+
+  <br>
+  <br>
+
+<ul>
+  <li><a  href="index.html">HOME</a></li>
+  <li><a href="news.html">IN THE NEWS...</a></li>
+  <li><a href="statistics.html">STATISTICS</a></li>
+  <li><a class="active" href="data.html">DATA VISUALIZATIONS</a></li>
+    <li><a href="about.html"> ABOUT THIS PROJECT</a></li>
+  <li><a href="references.html">REFERENCES</a></li>
+</ul>
+
+<h1 style="font-size:8vw"> INCARCERATION</h1>
+
+<h2>Data Visualizations</h2>
+<br>
+<br>
+<br>
+<br>
+
+<p> Experimenting with using tools for data visualization! This is the Basic Colum Chart from Highcharts, into which I plugged the same data as I plotted on the statistics page. Of course I would love the data to be visualized with even more interaction, and I would like to have more control of the style! But overall, it is a start, and a marker of ha, tremendous progress. </p>
+<br>
+<br>
+<br>
+<br>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0px 100px 0px 40px;" style="max-width:60%;height:auto;"></div>
+
+
+<script>
+ Highcharts.chart('container', {
+     chart: {
+         type: 'column'
+     },
+     title: {
+         text: 'Comparing Statistics'
+     },
+     subtitle: {
+         text: 'Incarceration Rates, GDP per Capita, Wealth Distribution & Happiness'
+     },
+     xAxis: {
+         categories: [
+             'USA',
+             'S. Africa',
+             'Rwanda',
+             'Russia',
+             'Brazil',
+             'Australia',
+             'China',
+             'Canada',
+             'Norway',
+             'India'
+         ],
+         crosshair: true
+     },
+     yAxis: {
+         min: 0,
+         title: {
+             text: 'Percentile'
+         }
+     },
+     tooltip: {
+         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+             '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+         footerFormat: '</table>',
+         shared: true,
+         useHTML: true
+     },
+     plotOptions: {
+         column: {
+             pointPadding: 0.2,
+             borderWidth: 0
+         }
+     },
+     series: [{
+         name: 'Incarceration',
+         data: [100, 95, 94, 93, 87, 61, 40, 37, 24, 4]
+
+     }, {
+         name: 'GDP',
+         data: [94, 42, 12, 74, 57, 91, 58, 88, 97, 33]
+     }, {
+         name: 'Distribution',
+         data: [27, 1, 19, 36, 13, 84, 20, 75, 93, 62]
+     }, {
+         name: 'Happiness',
+         data: [91, 36, 3, 68, 86, 94, 49, 95, 100, 21]
+     }]
+ });
+</script>
+
+
+
+
+  </body>
